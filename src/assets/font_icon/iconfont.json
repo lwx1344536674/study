@@ -1,0 +1,30 @@
+{
+  "id": "1770320",
+  "name": "my-app",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "基于vue+elementUI+axios项目",
+  "glyphs": [
+    {
+      "icon_id": "1487403",
+      "name": "user",
+      "font_class": "user",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "11372676",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e8b2",
+      "unicode_decimal": 59570
+    },
+    {
+      "icon_id": "11372706",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e8b9",
+      "unicode_decimal": 59577
+    }
+  ]
+}

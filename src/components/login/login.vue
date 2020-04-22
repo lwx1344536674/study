@@ -14,8 +14,8 @@
 				ref="loginFormRef"
 			>
 				<!-- 用户名 -->
-				<el-form-item prop="userName">
-					<el-input type="text" prefix-icon="iconfont iconuser" v-model="loginForm.userName"></el-input>
+				<el-form-item prop="username">
+					<el-input type="text" prefix-icon="iconfont iconuser" v-model="loginForm.username"></el-input>
 				</el-form-item>
 				<!-- 密码 -->
 				<el-form-item prop="password">
@@ -41,17 +41,17 @@ export default {
 	data() {
 		return {
 			loginForm: {
-				userName: '',
-				password: ""
+				username: "admin",
+				password: "123456"
 			},
 			loginFormRules: {
 				// 验证用户名
-				userName: [{ required: true, message: '请输入用户名', trigger: 'blur' },
+				username: [{ required: true, message: '请输入用户名', trigger: 'blur' },
 				{ min: 3, max: 10, message: '长度在 3 到 10 个字符', trigger: 'blur' }
 				],
 				// 验证密码
 				password: [{ required: true, message: '请输入密码', trigger: 'blur' },
-				{ min: 7, max: 15, message: '长度在 7 到 15 个字符', trigger: 'blur' }]
+				{ min: 5, max: 10, message: '长度在 5 到 10 个字符', trigger: 'blur' }]
 			}
 		}
 	},
@@ -62,8 +62,15 @@ export default {
 		},
 		// 登录事件
 		login() {
-			this.$refs.loginFormRef.validate(valid => {
+			this.$refs.loginFormRef.validate(async valid => {
+				console.log(valid)
 				if (!valid) return;
+
+				const { data: res } = await this.$http.post("login", this.loginForm);
+				console.log(res)
+				if (res.meta.status !== 200) return this.$message.error("登录失败")
+				this.$message.success("登录成功")
+
 			})
 		}
 

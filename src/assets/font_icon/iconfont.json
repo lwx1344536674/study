@@ -6,6 +6,62 @@
   "description": "基于vue+elementUI+axios项目",
   "glyphs": [
     {
+      "icon_id": "212782",
+      "name": "show-password ",
+      "font_class": "showpassword",
+      "unicode": "ea3f",
+      "unicode_decimal": 59967
+    },
+    {
+      "icon_id": "233324",
+      "name": "users",
+      "font_class": "users",
+      "unicode": "e8e0",
+      "unicode_decimal": 59616
+    },
+    {
+      "icon_id": "2539050",
+      "name": "默认头像图标",
+      "font_class": "morentouxiangtubiao",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "2570077",
+      "name": "单据",
+      "font_class": "danju-tianchong",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "5086423",
+      "name": "商品",
+      "font_class": "shangpin",
+      "unicode": "e707",
+      "unicode_decimal": 59143
+    },
+    {
+      "icon_id": "6848484",
+      "name": "空间",
+      "font_class": "kongjian",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "8840323",
+      "name": "报表",
+      "font_class": "baobiao",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "13536782",
+      "name": "lock-fill",
+      "font_class": "lock-fill",
+      "unicode": "eab1",
+      "unicode_decimal": 60081
+    },
+    {
       "icon_id": "1487403",
       "name": "user",
       "font_class": "user",
